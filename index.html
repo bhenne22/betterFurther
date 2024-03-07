@@ -50,7 +50,7 @@
             <div class="_6-col-grid">
               <div id="w-node-cc8e0fc0-c39c-4075-fa96-30947641f619-e41fe25b" class="laps">Laps</div>
               <div id="w-node-_556d431f-4d43-2e17-52da-49910535412f-e41fe25b" class="laps">Distance</div>
-              <div id="w-node-_556d431f-4d43-2e17-52da-49910535412f-e41fe222" class="laps">Time</div>
+              <div id="w-node-_556d431f-4d43-2e17-52da-49910535412f-e41fe222" class="laps">Time of Last Lap</div>
               <div id="w-node-_556d431f-4d43-2e17-52da-49910535412f-e41fe224" class="laps">Last Lap Pace</div>
               <div id="w-node-_556d431f-4d43-2e17-52da-49910535412f-e41fe226" class="laps">Avg. Pace</div>
             </div>
@@ -459,7 +459,8 @@ function displayData(data) {
       document.getElementById(item.pid+'-lap').innerHTML = `${lapnumber[0]}`
       document.getElementById(item.pid+'-distance').innerHTML = `${item.mileDistance} mi`
 	  try{
-	    document.getElementById(item.pid+'-time').innerHTML = `${item.timeOfDay}`
+	    //document.getElementById(item.pid+'-time').innerHTML = `${item.timeOfDay}`
+        document.getElementById(item.pid+'-time').innerHTML = `${item.time}`
         document.getElementById(item.pid+'-pace').innerHTML = `${item.pace}`
         document.getElementById(item.pid+'-paceAvg').innerHTML = `${item.paceAvg}`
 	  } catch(e) {
