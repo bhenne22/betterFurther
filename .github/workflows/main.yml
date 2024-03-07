@@ -13,6 +13,9 @@ jobs:
       with:
         server: sftp.brooks.dreamhost.com
         username: bhenne22
-        password: ${{ secrets.TPK_FTP_PW }}
-	port: 22
+	password: ${{ secrets.SECRET_TOKEN }}
 	server-dir: teampumaknife.com/betterfurther
+
+        
+	
+	
